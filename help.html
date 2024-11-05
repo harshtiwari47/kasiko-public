@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kas Bot Command Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #444;
+    }
+    .section {
+      margin: 20px 0;
+    }
+    .section-title {
+      font-size: 1.5em;
+      color: #555;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kasiko Bot Command Guide</h1>
+  <p>
+    All commands are triggered by <code>kas .command</code>. Use the available commands and aliases below.
+  </p>
+
+  <div class="section">
+    <div class="section-title">
+      User Commands
+    </div>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Alias</th>
+        <th>Usage & Description</th>
+      </tr>
+      <tr>
+        <td>profile</td>
+        <td>p</td>
+        <td>View your profile or mention a user to view theirs. Usage: <code>kas .profile [@user]</code></td>
+      </tr>
+      <tr>
+        <td>leaderboard</td>
+        <td>lb</td>
+        <td>View the leaderboard. Usage: <code>kas .leaderboard</code></td>
+      </tr>
+      <tr>
+        <td>daily</td>
+        <td>dr</td>
+        <td>Claim your daily login reward. Usage: <code>kas .daily</code></td>
+      </tr>
+      <tr>
+        <td>cash</td>
+        <td>c</td>
+        <td>Check your current cash balance. Usage: <code>kas .cash</code></td>
+      </tr>
+      <tr>
+        <td>charity</td>
+        <td>cy</td>
+        <td>Check your charity balance. Usage: <code>kas .charity</code></td>
+      </tr>
+      <tr>
+        <td>trust</td>
+        <td>ts</td>
+        <td>Check your trust level. Usage: <code>kas .trust</code></td>
+      </tr>
+      <tr>
+        <td>roses</td>
+        <td>r</td>
+        <td>Give roses to another user. Usage: <code>kas .roses &lt;amount&gt; &lt;@user&gt;</code></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      Game Commands
+    </div>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Alias</th>
+        <th>Usage & Description</th>
+      </tr>
+      <tr>
+        <td>tosscoin</td>
+        <td>tc</td>
+        <td>Play a coin toss game with a wager. Usage: <code>kas .tosscoin &lt;amount&gt;</code></td>
+      </tr>
+      <tr>
+        <td>guess</td>
+        <td>g</td>
+        <td>Guess a number with a wager. Usage: <code>kas .guess &lt;amount&gt; &lt;number&gt;</code></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      Shop Commands
+    </div>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Alias</th>
+        <th>Usage & Description</th>
+      </tr>
+      <tr>
+        <td>shop</td>
+        <td>shp</td>
+        <td>Open the shop. Specify <code>car</code> or <code>structure</code> to view categories. Usage: <code>kas .shop car</code></td>
+      </tr>
+      <tr>
+        <td>cars</td>
+        <td>car, cr</td>
+        <td>Access car-related commands. Usage: <code>kas .cars</code></td>
+      </tr>
+      <tr>
+        <td>structures</td>
+        <td>st, structure</td>
+        <td>Access structure-related commands. Usage: <code>kas .structures</code></td>
+      </tr>
+      <tr>
+        <td>buy</td>
+        <td>by</td>
+        <td>Buy an item from the shop. Usage: <code>kas .buy &lt;item&gt; &lt;name&gt;</code></td>
+      </tr>
+      <tr>
+        <td>sell</td>
+        <td>sl</td>
+        <td>Sell an item back to the shop. Usage: <code>kas .sell &lt;item&gt; &lt;name&gt;</code></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      Stock Commands
+    </div>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Alias</th>
+        <th>Usage & Description</th>
+      </tr>
+      <tr>
+        <td>stock</td>
+        <td>s</td>
+        <td>View available stocks. Usage: <code>kas .stock</code></td>
+      </tr>
+      <tr>
+        <td>stockprice</td>
+        <td>sp</td>
+        <td>Check the price of a stock. Usage: <code>kas .stockprice &lt;ticker&gt;</code></td>
+      </tr>
+      <tr>
+        <td>buystock</td>
+        <td>bs</td>
+        <td>Buy a specified amount of stock. Usage: <code>kas .buystock &lt;ticker&gt; &lt;amount&gt;</code></td>
+      </tr>
+      <tr>
+        <td>sellstock</td>
+        <td>ss</td>
+        <td>Sell a specified amount of stock. Usage: <code>kas .sellstock &lt;ticker&gt; &lt;amount&gt;</code></td>
+      </tr>
+      <tr>
+        <td>portfolio</td>
+        <td>pf</td>
+        <td>View your or another user's stock portfolio. Usage: <code>kas .portfolio [@user]</code></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      Ocean Life Commands
+    </div>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Alias</th>
+        <th>Usage & Description</th>
+      </tr>
+      <tr>
+        <td>zone</td>
+        <td>z</td>
+        <td>List available zones to explore. Usage: <code>kas .zone</code></td>
+      </tr>
+      <tr>
+        <td>explore</td>
+        <td>ex</td>
+        <td>Explore a specific zone. Usage: <code>kas .explore &lt;zone&gt;</code></td>
+      </tr>
+      <tr>
+        <td>catch</td>
+        <td>ch</td>
+        <td>Catch an animal in the ocean. Usage: <code>kas .catch</code></td>
+      </tr>
+      <tr>
+        <td>collect</td>
+        <td>ct</td>
+        <td>Collect rewards from your aquarium. Usage: <code>kas .collect</code></td>
+      </tr>
+      <tr>
+        <td>collection</td>
+        <td>cn</td>
+        <td>View your or another user's animal collection. Usage: <code>kas .collection [@user]</code></td>
+      </tr>
+      <tr>
+        <td>aquarium</td>
+        <td>aq</td>
+        <td>View your aquarium. Usage: <code>kas .aquarium</code></td>
+      </tr>
+      <tr>
+        <tr>
+          <td>aqua</td>
+          <td><code>a</code></td>
+         <td>Manage aquarium animals. Add, remove, or sell animals. Usage: <code>kas .aqua &lt;add|remove|sell&gt; &lt;animal&gt; [amount]</code></td>
+        </tr>
+        <tr>
+          <td>feed</td>
+          <td><code>f</code></td>
+          <td>Feed animals in your aquarium. Usage: <code>kas .feed &lt;animal&gt; &lt;amount&gt;</code></td>
+        </tr>
+      </table>
+    </section>
+  </section>
+
+  <section class="command-section">
+    <h2>Marriage Commands</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Command</th>
+          <th>Alias</th>
+          <th>Usage &amp; Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>marry</td>
+          <td><code>my</code></td>
+          <td>Propose marriage to another user. Usage: <code>kas .marry &lt;@user&gt;</code></td>
+        </tr>
+        <tr>
+          <td>divorce</td>
+          <td><code>div</code></td>
+          <td>Divorce your spouse. Usage: <code>kas .divorce &lt;@user&gt;</code></td>
+        </tr>
+        <tr>
+          <td>marriage</td>
+          <td><code>m</code>, <code>spouse</code></td>
+          <td>View your marriage status. Usage: <code>kas .marriage</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+</body>
+</html>
