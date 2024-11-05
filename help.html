@@ -4,25 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kas Bot Command Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: "Afacad", sans-serif;
+      background-color: #eaedff;
       color: #333;
       margin: 0;
       padding: 20px;
+      font-size: calc(100% + .35vw);
+      padding: 1em calc(2em + 2vw);
     }
     h1 {
       text-align: center;
-      color: #444;
+      color: #0c0a20;
+      padding: calc(1em + 2vw) 0;
     }
     .section {
       margin: 20px 0;
     }
     .section-title {
       font-size: 1.5em;
-      color: #555;
-      border-bottom: 2px solid #ccc;
+      color: #1e253d;
+      border-bottom: 1px solid #3a3e6279;
       padding-bottom: 5px;
       margin-bottom: 10px;
     }
@@ -37,11 +47,18 @@
       border: 1px solid #ddd;
     }
     th {
-      background-color: #f0f0f0;
+      background-color: #f2f1fd;
       font-weight: bold;
     }
     tr:nth-child(even) {
-      background-color: #f9f9f9;
+      background-color: #ebeaff;
+    }
+    code {
+      font-size: 75%;
+      background: #c6d1f78a;
+      padding: 2px 6px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
     }
   </style>
 </head>
@@ -95,7 +112,7 @@
       <tr>
         <td>roses</td>
         <td>r</td>
-        <td>Give roses to another user. Usage: <code>kas .roses &lt;amount&gt; &lt;@user&gt;</code></td>
+        <td>View your roses or Give roses to another user. Usage: <code>kas .roses &lt;amount&gt; &lt;@user&gt;</code></td>
       </tr>
     </table>
   </div>
@@ -151,12 +168,12 @@
       <tr>
         <td>buy</td>
         <td>by</td>
-        <td>Buy an item from the shop. Usage: <code>kas .buy &lt;item&gt; &lt;name&gt;</code></td>
+        <td>Buy an item from the shop. Usage: <code>kas .buy &lt;item&gt; &lt;id&gt;</code></td>
       </tr>
       <tr>
         <td>sell</td>
         <td>sl</td>
-        <td>Sell an item back to the shop. Usage: <code>kas .sell &lt;item&gt; &lt;name&gt;</code></td>
+        <td>Sell an item back to the shop. Usage: <code>kas .sell &lt;item&gt; &lt;id&gt;</code></td>
       </tr>
     </table>
   </div>
@@ -243,7 +260,7 @@
         <tr>
           <td>aqua</td>
           <td><code>a</code></td>
-         <td>Manage aquarium animals. Add, remove, or sell animals. Usage: <code>kas .aqua &lt;add|remove|sell&gt; &lt;animal&gt; [amount]</code></td>
+          <td>Manage aquarium animals. Add, remove, or sell animals. Usage: <code>kas .aqua &lt;add|remove|sell&gt; &lt;animal&gt; [amount]</code></td>
         </tr>
         <tr>
           <td>feed</td>
@@ -255,7 +272,9 @@
   </section>
 
   <section class="command-section">
-    <h2>Marriage Commands</h2>
+    <div class="section-title">
+      Marriage Commands
+    </div>
     <table>
       <thead>
         <tr>
